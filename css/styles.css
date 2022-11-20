@@ -1,0 +1,177 @@
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos generales*/
+
+/*Estilos del body*/
+body{
+    color: rgb(0, 0, 0);
+    background-image: url("../img/montains.jpg");
+    background-position: center;
+
+}
+
+/*estilos del header celular*/
+
+
+header{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif; 
+    background-color: rgba(102, 190, 225, 0.608);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    display: none;
+   
+     
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+}
+
+header nav ul li:hover{
+    background-color: rgb(6, 193, 190);
+    padding: 10px;
+    color: black;
+    text-shadow: 1px 0.4px black;
+    text-align: none;
+    border-radius: 10px;
+    box-shadow: 1px 0.4px black;
+    transition: 0.3s;
+    
+
+}
+
+/*Estilos de main*/
+
+main{
+   margin: 100px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+
+main .uno, main .dos{
+text-align: right;
+width: 420px;
+}
+
+
+footer{
+    background-color: rgba(102, 190, 225, 0.608);
+}
+
+
+footer h2{
+    text-align: center;
+   margin: 50px;
+
+}
+
+/*propiedades del contenedor (GRID)*/
+
+.contenedor{
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows:100%;
+  grid-template-areas: 
+  "header header header header";
+}
+
+/*estilos de los botones del curso*/
+
+
+.botonlinea{
+ background-color: aqua;
+ text-decoration:none;
+ border-radius: 10px;
+
+}
+
+.botonpuntillismo{
+    background-color: aqua;
+    text-decoration:none;
+    border-radius: 10px;
+   
+   }
+
+   .botonsombreado{
+    background-color: aqua;
+    text-decoration:none;
+    border-radius: 10px;
+   
+   }
+   .botoncurva{
+    background-color: aqua;
+    text-decoration:none;
+    border-radius: 10px;
+   
+   }
+   .botonlinearecta{
+    background-color: aqua;
+    text-decoration:none;
+    border-radius: 10px;
+   
+   }
+
+
+   
+
+/*version de celular*/   /* mq */
+
+   @media screen and (min-width:413px){
+    header{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    header nav ul li{
+        background-color: rgb(6, 193, 190);
+        padding: 7px;
+        color: black;
+        text-shadow: 1px 0.4px black;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 1px 0.4px black;
+        transition: 0.3s;
+        z-index: 100px;
+        
+
+
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    }
+
+
+    /*footer de contacto*/
+
+  /*Diseno de imagenes de galeria*/
+
+
+  .imagenunogaleria{
+
+    width: 600px;
+    
+  }
+
+  #cursos .card{
+    background-color: transparent;
+  }
